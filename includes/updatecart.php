@@ -8,11 +8,11 @@ if(isset($_POST['cart_id'])){
                     WHERE cart_id = ?";
         $stmt_upd = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt_upd, $sql_upd)){
-        header("location: ../index.php?error=8"); //update failed
+        header("location: ../control_dashboard.php?error=8"); //update failed
         exit();
         }
         mysqli_stmt_bind_param($stmt_upd,"ss",$new_qty,$cart_id);
         mysqli_stmt_execute($stmt_upd);
-        header("location: ../index.php?success_update=1");
+        header("location: ../control_dashboard.php?success_update=$cat_id");
         
     }

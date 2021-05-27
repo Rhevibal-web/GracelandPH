@@ -3,7 +3,7 @@
 $servername="localhost";
 $dbusername="root";
 $dbpassword="";
-$dbname="lecture";
+$dbname="graceland";
 
 $conn = mysqli_connect($servername,$dbusername,$dbpassword,$dbname);
 $_GLOBAL['db'] = $conn;
@@ -12,3 +12,10 @@ $_GLOBAL['db'] = $conn;
 if (!$conn){
     die("Maintenance Mode.");
 }
+
+session_start();
+
+
+
+
+include_once "utilities.inc.php";
