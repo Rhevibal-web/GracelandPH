@@ -72,7 +72,7 @@ if(!isset($searchkey)){
                                                     </div><br>
                                                 <h5 class="card-title"><?php echo $val['item_name']?></h5>
                                                 <em class="card-text" style="color: blue"> <b>Php <?php echo number_format($val['item_price'],2); ?></b> </em><br>
-                                                                                                    <button style="background-color: green;border-radius: 50px;font-size: 14px;margin-top: 10px" type="submit" class="border-4  btn btn-lg btn-outline-light "> <i class="bi bi-cart-plus"></i> Add to Cart </button></form>
+                                 <button style="background-color: green;border-radius: 50px;font-size: 14px;margin-top: 10px" type="submit" class="border-4  btn btn-lg btn-outline-light "> <i class="bi bi-cart-plus"></i> Add to Cart </button></form>
                                             </div>
                                         </div>
                                     </div>
